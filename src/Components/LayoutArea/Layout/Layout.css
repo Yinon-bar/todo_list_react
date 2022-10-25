@@ -1,0 +1,39 @@
+.Layout {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.Layout nav {
+  width: 100%;
+}
+
+.Layout .Header {
+  flex-basis: 100%;
+  width: 100%;
+  height: 10%;
+}
+
+.Layout .Main {
+  flex-basis: 85%;
+  height: 82%;
+  background-color: #f0f5fa;
+  color: #5f6d96;
+}
+
+.Layout .Aside {
+  flex-basis: 15%;
+  background-color: #5f6d96;
+  color: #d9e3f1;
+  display: flex;
+  justify-content: center;
+}
+
+.Layout .Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8%;
+}
