@@ -2,6 +2,7 @@ import AddTask from "../../Dashboard/AddTask/AddTask";
 import Tasks from "../../Dashboard/Task/Tasks";
 import TaskCounter from "../../Dashboard/TaskCounter/TaskCounter";
 import Welcome from "../../Dashboard/Welcome/Welcome";
+import User from "../../Users/User";
 import "./Main.css";
 
 function Main() {
@@ -18,6 +19,9 @@ function Main() {
 
       {/* Event */}
       <AddTask />
+
+      {/* Users */}
+      <User />
     </div>
   );
 }
