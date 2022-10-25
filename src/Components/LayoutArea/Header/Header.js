@@ -1,5 +1,5 @@
 import "./Header.css";
-import img from "../../../Assets/img/React-icon.svg.png";
+import img from "../../../Assets/img/react icon final.png";
 
 function Header() {
   return (

@@ -1,0 +1,16 @@
+.AddTask .btn {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -3px -3px 3px rgb(255, 255, 255);
+  background-color: #d9e3f1;
+  color: #485785;
+  font-weight: 500;
+}
+
+.AddTask .btn:active {
+  box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3), -1px -1px 3px rgb(255, 255, 255);
+  background-color: #d9e3f1;
+}
