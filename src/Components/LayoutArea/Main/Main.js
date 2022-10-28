@@ -1,6 +1,7 @@
 import AddTask from "../../Dashboard/AddTask/AddTask";
 import Tasks from "../../Dashboard/Task/Tasks";
 import TaskCounter from "../../Dashboard/TaskCounter/TaskCounter";
+import Timer from "../../Dashboard/Timer/Timer";
 import Welcome from "../../Dashboard/Welcome/Welcome";
 import User from "../../Users/User";
 import "./Main.css";
@@ -22,6 +23,9 @@ function Main() {
 
       {/* Users */}
       <User />
+
+      {/* Timer */}
+      <Timer />
     </div>
   );
 }
