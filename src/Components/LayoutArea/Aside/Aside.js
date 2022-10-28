@@ -3,7 +3,9 @@ import "./Aside.css";
 function Aside() {
   return (
     <div className="Aside">
-      <h1>Aside</h1>
+      <a href="">Home</a>
+      <a href="">Todo</a>
+      <a href="">Users</a>
     </div>
   );
 }

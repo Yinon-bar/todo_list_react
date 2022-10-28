@@ -4,6 +4,7 @@ import TaskCounter from "../../Dashboard/TaskCounter/TaskCounter";
 import Timer from "../../Dashboard/Timer/Timer";
 import Welcome from "../../Dashboard/Welcome/Welcome";
 import User from "../../Users/User";
+import Routing from "../Routing/Routing";
 import "./Main.css";
 
 function Main() {
@@ -11,21 +12,23 @@ function Main() {
     <div className="Main">
       <Welcome name="Meir" />
 
+      <Routing />
+
       {/* conditional rendering */}
 
-      <TaskCounter />
+      {/* <TaskCounter /> */}
 
       {/* Lists */}
-      <Tasks />
+      {/* <Tasks /> */}
 
       {/* Event */}
-      <AddTask />
+      {/* <AddTask /> */}
 
       {/* Users */}
-      <User />
+      {/* <User /> */}
 
       {/* Timer */}
-      <Timer />
+      {/* <Timer /> */}
     </div>
   );
 }

@@ -4,7 +4,8 @@
   margin: 1rem;
   border: none;
   cursor: pointer;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -3px -3px 3px rgb(255, 255, 255);
+  box-shadow: 5px 5px 6px rgba(106, 122, 138, 0.4),
+    -3px -3px 3px rgb(255, 255, 255);
   background-color: #d9e3f1;
   color: #485785;
   font-weight: 500;
