@@ -6,8 +6,6 @@ function Timer() {
 
   let isWork = false;
 
-  let inon = "inon";
-
   const startWork = () => {
     isWork = true;
     setTime(new Date().toLocaleTimeString());
