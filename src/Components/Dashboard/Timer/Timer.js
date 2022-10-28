@@ -5,6 +5,8 @@ function Timer() {
   let [time, setTime] = useState("");
 
   let isWork = false;
+  let isWork = false;
+  let isWork = false;
 
   const startWork = () => {
     isWork = true;
