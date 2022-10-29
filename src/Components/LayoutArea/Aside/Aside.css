@@ -1,11 +1,15 @@
 .Aside {
   padding: 1rem;
+  background-color: #5f6d96;
+  color: #d9e3f1;
+}
+
+.Aside nav {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #5f6d96;
-  color: #d9e3f1;
 }
 
 .Aside a {
@@ -16,4 +20,8 @@
   color: #5f6d96;
   padding: 0.5rem 1rem;
   border-radius: 1.4rem;
+}
+
+.Aside .active {
+  font-weight: 700;
 }
