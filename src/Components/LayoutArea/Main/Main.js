@@ -1,8 +1,5 @@
-import AddTask from "../../Dashboard/AddTask/AddTask";
-import Tasks from "../../Dashboard/Task/Tasks";
-import TaskCounter from "../../Dashboard/TaskCounter/TaskCounter";
 import Timer from "../../Dashboard/Timer/Timer";
-import Welcome from "../../Dashboard/Welcome/Welcome";
+
 import User from "../../Users/User";
 import Routing from "../Routing/Routing";
 import "./Main.css";
@@ -10,19 +7,7 @@ import "./Main.css";
 function Main() {
   return (
     <div className="Main">
-      <Welcome name="Meir" />
-
       <Routing />
-
-      {/* conditional rendering */}
-
-      {/* <TaskCounter /> */}
-
-      {/* Lists */}
-      {/* <Tasks /> */}
-
-      {/* Event */}
-      {/* <AddTask /> */}
 
       {/* Users */}
       {/* <User /> */}
