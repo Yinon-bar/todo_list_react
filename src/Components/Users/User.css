@@ -1,0 +1,39 @@
+.User {
+  /* border: 2px solid red; */
+  box-shadow: 5px 5px 6px rgba(106, 122, 138, 0.4),
+    -3px -3px 3px rgb(255, 255, 255);
+  margin: 1rem;
+  border-radius: 1.4rem;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.User p {
+  margin-left: 2rem;
+}
+
+.User h3 {
+  margin-left: 1rem;
+}
+.User h4 {
+  margin-left: 1rem;
+}
+
+/* .User button {
+  margin-left: 2rem;
+  border-radius: 1.5rem;
+  padding: 0.4rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 6px rgba(106, 122, 138, 0.4),
+    -3px -3px 3px rgb(255, 255, 255);
+  background-color: #d9e3f1;
+  color: #485785;
+  font-weight: 500;
+}
+
+.User button:active {
+  box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3), -1px -1px 3px rgb(255, 255, 255);
+  background-color: #d9e3f1;
+} */
