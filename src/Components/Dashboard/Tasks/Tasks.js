@@ -1,31 +1,33 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import appconfig from "../../../Config/appConfig";
+import useFetch from "../../../Services/useFetch";
 import Task from "../Task/Task";
 
 import "./Tasks.css";
 
 function Tasks() {
-  let [tasks, setTasks] = useState([]);
-  let [error, setError] = useState(false);
-  let [loading, setLoading] = useState(true);
+  const [tasks, error, loading] = useFetch(appconfig.todos);
 
-  useEffect(() => {
-    setLoading(true);
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then((resp) => {
-        if (resp.ok) {
-          return resp.json();
-        }
-        setError(resp.status);
-        throw resp.status;
-      })
-      .then((data) => {
-        setTasks(data);
-        setTimeout(() => {
-          setLoading(false);
-        }, 1000);
-      });
-  }, []);
+  // let [tasks, setTasks] = useState([]);
+  // let [error, setError] = useState(false);
+  // let [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   setLoading(true);
+  //   fetch("https://jsonplaceholder.typicode.com/todos")
+  //     .then((resp) => {
+  //       if (resp.ok) {
+  //         return resp.json();
+  //       }
+  //       setError(resp.status);
+  //       throw resp.status;
+  //     })
+  //     .then((data) => {
+  //       setTasks(data);
+  //       setTimeout(() => {
+  //         setLoading(false);
+  //       }, 1000);
+  //     });
+  // }, []);
 
   if (error) {
     return (

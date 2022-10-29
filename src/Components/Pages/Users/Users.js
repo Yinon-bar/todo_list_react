@@ -1,32 +1,30 @@
-import { useState, useEffect } from "react";
-
 import User from "../../Users/User";
 import Timer from "../../Dashboard/Timer/Timer";
 import "./Users.css";
+import appconfig from "../../../Config/appConfig";
+import useFetch from "../../../Services/useFetch";
 
 function Users() {
-  let [users, setUsers] = useState([]);
-  let [error, setError] = useState(false);
-  let [loading, setLoading] = useState(true);
+  const [users, error, loading] = useFetch(appconfig.users);
 
-  useEffect(() => {
-    setLoading(true);
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((resp) => {
-        if (resp.ok) {
-          return resp.json();
-        }
-        setError(resp.status);
-        throw resp.status;
-      })
-      .then((data) => {
-        console.log(data);
-        setUsers(data);
-        setTimeout(() => {
-          setLoading(false);
-        }, 1000);
-      });
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   fetch("https://jsonplaceholder.typicode.com/users")
+  //     .then((resp) => {
+  //       if (resp.ok) {
+  //         return resp.json();
+  //       }
+  //       setError(resp.status);
+  //       throw resp.status;
+  //     })
+  //     .then((data) => {
+  //       console.log(data);
+  //       setUsers(data);
+  //       setTimeout(() => {
+  //         setLoading(false);
+  //       }, 1000);
+  //     });
+  // }, []);
 
   if (error) {
     return (
