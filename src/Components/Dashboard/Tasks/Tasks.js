@@ -6,12 +6,42 @@ import "./Tasks.css";
 
 function Tasks() {
   let [tasks, setTasks] = useState([]);
+  let [error, setError] = useState(false);
+  let [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos").then((resp) =>
-      resp.json().then((data) => setTasks(data))
-    );
+    setLoading(true);
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((resp) => {
+        if (resp.ok) {
+          return resp.json();
+        }
+        setError(resp.status);
+        throw resp.status;
+      })
+      .then((data) => {
+        setTasks(data);
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+      });
   }, []);
+
+  if (error) {
+    return (
+      <>
+        <h1>Error!</h1>
+      </>
+    );
+  }
+
+  if (loading) {
+    return (
+      <>
+        <h3>Loading...</h3>
+      </>
+    );
+  }
 
   return (
     <div className="Tasks">
