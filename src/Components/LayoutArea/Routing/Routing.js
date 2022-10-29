@@ -1,5 +1,11 @@
+import { Route, Routes } from "react-router-dom";
+
 function Routing() {
-  return <div className="Routing">Routing</div>;
+  return (
+    <Routes>
+      <Route path="/home" />
+    </Routes>
+  );
 }
 
 export default Routing;
