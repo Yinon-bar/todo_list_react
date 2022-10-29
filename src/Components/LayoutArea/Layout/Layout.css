@@ -24,10 +24,6 @@
 
 .Layout .Aside {
   flex-basis: 15%;
-  background-color: #5f6d96;
-  color: #d9e3f1;
-  display: flex;
-  justify-content: center;
 }
 
 .Layout .Footer {
