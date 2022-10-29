@@ -1,5 +1,5 @@
 import AddTask from "../../Dashboard/AddTask/AddTask";
-import Tasks from "../../Dashboard/Task/Tasks";
+import Tasks from "../../Dashboard/Tasks/Tasks";
 import "./Todo.css";
 
 function Todo() {
