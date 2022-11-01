@@ -3,6 +3,7 @@ import Home from "../../Pages/Home/Home";
 import Todo from "../../Pages/Todo/Todo";
 import Users from "../../Pages/Users/Users";
 import PageNotFound from "../../Pages/PageNotFound/PageNotFound";
+import Posts from "../../Pages/Posts/Posts";
 
 function Routing() {
   return (
@@ -10,6 +11,7 @@ function Routing() {
       <Route path="/home" element={<Home />} />
       <Route path="/todo" element={<Todo />} />
       <Route path="/users" element={<Users />} />
+      <Route path="/posts" element={<Posts />} />
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>

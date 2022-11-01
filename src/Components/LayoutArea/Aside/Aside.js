@@ -8,6 +8,7 @@ function Aside() {
         <NavLink to="/home">Home</NavLink>
         <NavLink to="/todo">Todo</NavLink>
         <NavLink to="/users">Users</NavLink>
+        <NavLink to="/posts">Posts</NavLink>
       </nav>
     </div>
   );
