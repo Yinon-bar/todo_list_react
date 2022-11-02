@@ -11,7 +11,8 @@ function Routing() {
       <Route path="/home" element={<Home />} />
       <Route path="/todo" element={<Todo />} />
       <Route path="/users" element={<Users />} />
-      <Route path="/posts" element={<Posts />} />
+      <Route path="/posts/*" element={<Posts />} />
+
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>

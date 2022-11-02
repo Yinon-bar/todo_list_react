@@ -1,0 +1,44 @@
+.PostCard .post {
+  background-color: #d9e3f1;
+  margin: 1rem 0rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #5f6d96;
+  box-shadow: 0px 5px 15px #888d9cc5;
+}
+
+.PostCard hr {
+  color: #9fa3ad;
+  border: 1px solid #5f6d96c9;
+  margin-bottom: 0.5rem;
+}
+
+.PostCard button {
+  margin: 1rem 0rem;
+  border-radius: 1.5rem;
+  padding: 0.4rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 6px rgba(106, 122, 138, 0.4),
+    -3px -3px 3px rgb(255, 255, 255);
+  background-color: #d9e3f1;
+  color: #485785;
+  font-weight: 500;
+}
+
+.PostCard button:active {
+  box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3), -1px -1px 3px rgb(255, 255, 255);
+  background-color: #d9e3f1;
+}
+
+.PostCard a {
+  color: #485785;
+  text-decoration: none;
+}
+.PostCard a:active {
+  color: #485785;
+}
+
+.PostCard a:visited {
+  color: #485785;
+}
