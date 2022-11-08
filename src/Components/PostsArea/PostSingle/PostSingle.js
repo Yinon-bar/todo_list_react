@@ -3,17 +3,17 @@ import appconfig from "../../../Config/appConfig";
 import useFetch from "../../../Services/useFetch";
 import "./PostSingle.css";
 
-function PostSingle({ posts }) {
-  console.log(posts);
-  const { postId } = useParams();
-  console.log(postId);
+function PostSingle(props) {
+  console.log(props.posts);
+  const { id } = useParams();
+  console.log(id);
 
-  // const [post, error, loading] = useFetch(appconfig.posts + postId);
+  const [post, error, loading] = useFetch(appconfig.posts + id);
 
   return (
     <div className="PostSingle">
-      {/* <h4>{post.title}</h4> */}
-      {/* <p>{post.body}</p> */}
+      <h4>{post.title}</h4>
+      <p>{post.body}</p>
     </div>
   );
 }
