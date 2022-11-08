@@ -12,6 +12,4 @@ function PostsList({ posts }) {
   );
 }
 
-let gfh = 5;
-
 export default PostsList;
