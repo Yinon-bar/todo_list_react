@@ -7,12 +7,12 @@ function PostSingle({ posts }) {
   const { postId } = useParams();
   console.log(postId);
 
-  const [post, error, loading] = useFetch(appconfig.posts + postId);
+  // const [post, error, loading] = useFetch(appconfig.posts + postId);
 
   return (
     <div className="PostSingle">
-      <h4>{post.title}</h4>
-      <p>{post.body}</p>
+      {/* <h4>{post.title}</h4> */}
+      {/* <p>{post.body}</p> */}
     </div>
   );
 }

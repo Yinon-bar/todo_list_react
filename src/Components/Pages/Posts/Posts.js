@@ -18,8 +18,8 @@ function Posts() {
 
       <hr />
       <Routes>
-        <Route path="" element={<PostsList posts={posts} />} />
-        <Route path=":id" element={<PostSingle />} />
+        <Route path="/" element={<PostsList posts={posts} />} />
+        <Route path=":post_id" element={<PostSingle posts={posts} />} />
         <Route path="/new" element={<Users />} />
       </Routes>
     </div>
