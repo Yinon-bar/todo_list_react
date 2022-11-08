@@ -9,22 +9,27 @@ function PostSingle({ posts }) {
 
   const navigate = useNavigate();
 
-  // const [post, error, loading] = useFetch(appconfig.posts + id);
   const selectedPost = posts.filter((evalPost) => evalPost.id === +id)[0];
-  console.log(selectedPost);
+  // console.log(selectedPost);
 
-  if (posts.length && !selectedPost) {
+  if (!posts) {
     navigate("/posts");
   }
 
-  if (!posts) {
-    return "Loading";
-  }
-
+  const [comments] = useFetch(appconfig.posts + id + "/comments");
   return (
     <div className="PostSingle">
       <h4>{selectedPost.title}</h4>
       <p>{selectedPost.body}</p>
+      {comments.length && (
+        <ul>
+          {comments.map((comment) => (
+            <li key={comment.id}>
+              <b>{comment.name}</b> - {comment.body}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

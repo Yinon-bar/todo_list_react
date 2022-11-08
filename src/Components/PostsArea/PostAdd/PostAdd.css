@@ -1,0 +1,63 @@
+.PostAdd {
+  width: 350px;
+}
+
+.PostAdd form {
+  height: 350px;
+  margin: 2rem;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  border: 2px solid#5f6d96;
+  border-radius: 1rem;
+  background-color: #d9e3f1;
+}
+
+.PostAdd form label {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 6px rgba(106, 122, 138, 0.4),
+    -3px -3px 3px rgb(255, 255, 255);
+  border-radius: 0 0 0.5rem 0.5rem;
+  color: #6e7488af;
+}
+
+.PostAdd form label input {
+  text-align: center;
+  border: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  background-color: #d9e3f1;
+  color: #485785;
+}
+
+.PostAdd form label textarea {
+  text-align: center;
+  border: unset;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: #d9e3f1;
+  font-size: 1rem;
+  color: #485785;
+}
+
+.PostAdd button {
+  border-radius: 1.5rem;
+  padding: 0.4rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 6px rgba(106, 122, 138, 0.4),
+    -3px -3px 3px rgb(255, 255, 255);
+  background-color: #485785;
+  color: #d9e3f1;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.PostAdd button:active {
+  box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3), -1px -1px 3px rgb(255, 255, 255);
+  background-color: #2f427a;
+  color: #d9e3f1;
+  transform: scale(0.97);
+}
