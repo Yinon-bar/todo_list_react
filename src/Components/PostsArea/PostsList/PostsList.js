@@ -11,6 +11,5 @@ function PostsList({ posts }) {
     </div>
   );
 }
-fhgrth;
 
 export default PostsList;
