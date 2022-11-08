@@ -9,7 +9,7 @@ import "./Posts.css";
 function Posts() {
   const [posts, error, loading] = useFetch(appconfig.posts);
 
-  console.log(posts);
+  // console.log(posts);
 
   return (
     <div className="Posts">
@@ -19,7 +19,11 @@ function Posts() {
       <hr />
       <Routes>
         <Route path="/" element={<PostsList posts={posts} />} />
+<<<<<<< HEAD
         <Route path=":post_id" element={<PostSingle posts={posts} />} />
+=======
+        <Route path="/:id" element={<PostSingle posts={posts} />} />
+>>>>>>> 4321b1871f0ce4ccff53c6a1364abc788dac32da
         <Route path="/new" element={<Users />} />
       </Routes>
     </div>
