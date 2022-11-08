@@ -12,4 +12,6 @@ function PostsList({ posts }) {
   );
 }
 
+let inon;
+
 export default PostsList;
