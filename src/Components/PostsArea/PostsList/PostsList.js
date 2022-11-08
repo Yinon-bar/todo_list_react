@@ -12,6 +12,4 @@ function PostsList({ posts }) {
   );
 }
 
-let inon = 5;
-
 export default PostsList;
