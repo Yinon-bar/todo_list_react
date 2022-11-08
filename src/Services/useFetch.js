@@ -12,6 +12,7 @@ function useFetch(url) {
         if (resp.ok) {
           return resp.json();
         }
+        // console.log(resp);
         setError(resp.status);
         throw resp.status;
       })

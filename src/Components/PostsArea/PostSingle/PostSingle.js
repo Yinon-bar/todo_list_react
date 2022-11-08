@@ -4,6 +4,7 @@ import useFetch from "../../../Services/useFetch";
 import "./PostSingle.css";
 
 function PostSingle({ posts }) {
+  console.log(posts);
   const { postId } = useParams();
   console.log(postId);
 
