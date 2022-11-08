@@ -9,7 +9,7 @@ import "./Posts.css";
 function Posts() {
   const [posts, error, loading] = useFetch(appconfig.posts);
 
-  console.log(posts);
+  // console.log(posts);
 
   return (
     <div className="Posts">
