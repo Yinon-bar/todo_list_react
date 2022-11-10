@@ -1,14 +1,12 @@
 import axios from "axios";
+import { useState } from "react";
 import appconfig from "../../../Config/appConfig";
 import "./PostAdd.css";
 
 function PostAdd() {
+  const [title, setTitle] = useState("");
   const sendNewPost = (event) => {
     event.preventDefault();
-    // const elements = event.target.elements;
-    // const title = elements.title.value;
-    // const body = elements.body.value;
-    // console.log(title, body);
 
     const formData = new FormData(event.target);
     formData.append("User id", 1);
@@ -27,8 +25,14 @@ function PostAdd() {
       <form onSubmit={sendNewPost}>
         <label>
           Enter post title
-          <input type="text" name="title" defaultValue="The Title" />
+          <input
+            onChange={(e) => setTitle(e.target.value)}
+            value={title}
+            type="text"
+            name="title"
+          />
         </label>
+        <span>{title}</span>
         <br />
         <label>
           Enter post body
