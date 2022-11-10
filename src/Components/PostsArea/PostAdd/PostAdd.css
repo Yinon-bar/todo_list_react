@@ -32,12 +32,13 @@
   font-size: 1.2rem;
   background-color: #d9e3f1;
   color: #485785;
+  padding: 0.2rem 0rem;
 }
 
 .PostAdd form label input:focus {
   outline: none;
   background-color: #5f6d96;
-  color: #d9e3f1;
+  color: #f0f5fa;
 }
 
 .PostAdd form label textarea {
