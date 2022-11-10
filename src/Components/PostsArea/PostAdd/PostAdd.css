@@ -34,6 +34,12 @@
   color: #485785;
 }
 
+.PostAdd form label input:focus {
+  outline: none;
+  background-color: #5f6d96;
+  color: #d9e3f1;
+}
+
 .PostAdd form label textarea {
   text-align: center;
   border: unset;
